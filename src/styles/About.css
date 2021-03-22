@@ -1,0 +1,126 @@
+* {
+  font-family: lato;
+}
+
+.shadow-about {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.mepiccont {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 120px;
+  width: 100%;
+  margin: 0 AUTO;
+  margin-bottom: -15px;
+  margin-top: -20px;
+  padding: 15px;
+}
+
+.mepicwrap {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  transition: all 0.5s ease-in-out;
+
+  margin: 0 AUTO;
+  border-radius: 50%;
+  /* background: url(../images/Benedikt.jpg); */
+  background-size: cover !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(33, 125, 187, 0.2);
+
+  /* position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  position: gotcha; */
+}
+.mepicwrap:hover {
+  cursor: pointer;
+  height: 180px;
+  width: 180px;
+  z-index: 999;
+}
+
+#about-overlay {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(33, 125, 187, 0.6);
+  z-index: 1;
+  position: gotcha;
+}
+
+#about {
+  padding: 75px 15px;
+  border-bottom: 1px solid #dcd9d9;
+}
+#about h2 {
+  color: #374054;
+}
+#about p {
+  color: #74808a;
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+  font-size: 12px;
+}
+#education {
+  padding: 50px 15px 20px 15px;
+  border-bottom: 1px solid #dcd9d9;
+  text-align: center;
+}
+#education h2 {
+  color: #374054;
+  margin-bottom: 50px;
+}
+.education-block {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border: 1px solid #dcd9d9;
+  text-align: left;
+}
+.education-block h3 {
+  font-weight: 500;
+  float: left;
+  margin: 0;
+  color: #374054;
+}
+.education-block span {
+  color: #74808a;
+  float: right;
+}
+.education-block h4 {
+  color: #74808a;
+  clear: both;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+.education-block p,
+.education-block ul {
+  margin: 0;
+  color: #74808a;
+  font-size: 0.9em;
+}
+.education-block ul {
+  padding: 0 0 0 15px;
+}
+#projects {
+  padding: 50px 15px;
+  border-bottom: 1px solid #dcd9d9;
+  text-align: center;
+}
+#projects h2 {
+  color: #374054;
+  margin-bottom: 50px;
+}

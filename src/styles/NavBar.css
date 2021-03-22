@@ -1,0 +1,23 @@
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.shadow-large {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    animation: none;
+    bottom: 0;
+    height: 100%;
+  }
+  #mobile-menu-open,
+  #mobile-menu-close {
+    display: block;
+  }}
