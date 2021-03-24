@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar";
 import Lead from "./components/Lead";
 import About from "./components/Aboutme";
 import Experience from "./components/Experience";
+import Timeline from "./components/Timeline";
+import {Button} from '@material-ui/core';
 
 function App() {
   return (
@@ -10,8 +12,7 @@ function App() {
       {/* <NavBar /> */}
       <Lead />
       <About />
-      <Experience />
-      <Experience />
+      <Timeline />
     </div>
   );
 }
