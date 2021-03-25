@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import "../styles/Timeline.css";
+import Modal from "react-modal";
 import me from "../images/class.jpg";
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 const ReadMore = ({ children }) => {
-  const text = children;
+  const text = { children };
   const [isReadMore, setIsReadMore] = useState(true);
   const toggleReadMore = () => {
     setIsReadMore(!isReadMore);
   };
   return (
     <p className="text">
-      {isReadMore ? text.slice(0, 167) : text}
-      {console.log(text.length)}
       {console.log("text" + text)}
+
       {isReadMore ? text.length > 150 : ""}
       <span onClick={toggleReadMore} className="read-or-hide">
         {isReadMore ? (
@@ -52,17 +52,19 @@ function timeline() {
                     <span className="badge">Web Dev Instructor</span>
                   </div>
                   <h6>A React love affair</h6>
-                  <ReadMore>
+                  <div id="text">
                     Teaching adults to become a web developer. Being their
                     companion and motivation to obtain this highly appreciated
                     skill. The course has been developed by myself and is
-                    React-orientated. <br/> <br/><h6>Programme</h6>{" "}
+                    React-orientated. <br /> <br />
+                    <h6>Programme</h6>{" "}
                     <div className="programme">
                       <ul>
                         <li>GIT</li>
+                        <li>Teams</li>
                         <li>CSS/SAAS</li>
                         <li>Grid/FlexBox</li>
-                        <li>Bootstrap</li> <li>Some PHP/Mysql</li>
+                        <li>Bootstrap</li> <li>Some PHP/Mysql</li><li>Firebase</li>
                         <li> Jquery</li>
                         <li> Node</li>
                         <li> Javascript</li>
@@ -71,22 +73,20 @@ function timeline() {
                       </ul>
                     </div>
                     Having a graphice designer background myself obliges my
-                    students to have a sexy result, it is mainly a Front-End
-                    I am proud when students find a job during of soon after my course.  <br/><br/>
+                    students to have a sexy result, it is mainly a Front-End I
+                    am proud when students find a job during of soon after my
+                    course. <br />
+                    <br />
                     <h6>Time-off Studies</h6>
                     <ul className="programme">
-                    <li> Headless CMS Sanity.io.</li>
-                    <li> Coding better.</li>
+                      <li> Headless CMS Sanity.io.</li>
+                      <li> Coding better.</li>
                     </ul>
-                  </ReadMore>
+                  </div>
                   <p className="timeline-subtitle">July 2018 - present day</p>
                 </div>
               </div>
             </div>
-
-
-
-
 
             <div className="timeline-container danger">
               <div className="timeline-icon">
