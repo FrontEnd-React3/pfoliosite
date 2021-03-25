@@ -1,40 +1,12 @@
 import React, { useState } from "react";
 import "../styles/Timeline.css";
-import Modal from "react-modal";
 import me from "../images/class.jpg";
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
-const ReadMore = ({ children }) => {
-  const text = { children };
-  const [isReadMore, setIsReadMore] = useState(true);
-  const toggleReadMore = () => {
-    setIsReadMore(!isReadMore);
-  };
-  return (
-    <p className="text">
-      {console.log("text" + text)}
 
-      {isReadMore ? text.length > 150 : ""}
-      <span onClick={toggleReadMore} className="read-or-hide">
-        {isReadMore ? (
-          <div className="e6cont ">
-            <div className="effect6 ">
-              <FaPlus></FaPlus>
-            </div>
-          </div>
-        ) : (
-          <div className="e6cont ">
-            <div className="effect6 ">
-              <FaMinus></FaMinus>
-            </div>
-          </div>
-        )}
-        {isReadMore ? "... PLEASE CLICK +" : ""}
-      </span>
-    </p>
-  );
-};
-function timeline() {
+function Timeline() {
+  const [show, setShow] = useState(false);
+
   return (
     <div className="containerbg">
       <div id="experience" className="background-alt">
@@ -52,38 +24,106 @@ function timeline() {
                     <span className="badge">Web Dev Instructor</span>
                   </div>
                   <h6>A React love affair</h6>
-                  <div id="text">
-                    Teaching adults to become a web developer. Being their
-                    companion and motivation to obtain this highly appreciated
-                    skill. The course has been developed by myself and is
-                    React-orientated. <br /> <br />
-                    <h6>Programme</h6>{" "}
-                    <div className="programme">
-                      <ul>
-                        <li>GIT</li>
-                        <li>Teams</li>
-                        <li>CSS/SAAS</li>
-                        <li>Grid/FlexBox</li>
-                        <li>Bootstrap</li> <li>Some PHP/Mysql</li><li>Firebase</li>
-                        <li> Jquery</li>
-                        <li> Node</li>
-                        <li> Javascript</li>
-                        <li>React using Context</li>
-                        <li> Ui/ux design libraries (Material design)</li>
-                      </ul>
+                  <div>
+                    <div className="inbetween  graish" id="text">
+                      Teaching adults to become a web developer. Being their
+                      companion and motivation to obtain this highly appreciated
+                      skill. The course has been developed by myself and is
+                      React-orientated.
                     </div>
-                    Having a graphice designer background myself obliges my
-                    students to have a sexy result, it is mainly a Front-End I
-                    am proud when students find a job during of soon after my
-                    course. <br />
-                    <br />
-                    <h6>Time-off Studies</h6>
-                    <ul className="programme">
-                      <li> Headless CMS Sanity.io.</li>
-                      <li> Coding better.</li>
-                    </ul>
+                    {!show ? (
+                      <div className="programme3 slowy">
+                        Click "+" to see the full programme.
+                      </div>
+                    ) : null}
+                    {show ? (
+                      <div className="programme  slowy">
+                        {" "}
+                        <h6 className="slowy">Programme</h6>
+                        <ul>
+                          {" "}
+                          <li className="hr"></li>
+                          <li>GIT</li>
+                          <li>Teams</li>
+                          <li>Setting up VS code & extentions</li>{" "}
+                          <li>Teams</li>
+                          <li className="hr"></li>
+                          <li>CSS/SAAS</li>
+                          <li>Grid/FlexBox</li>
+                          <li>Bootstrap</li>
+                          <li className="hr"></li>
+                          <li>PHP/Mysql</li>
+                          <li>Firebase</li>
+                          <li className="hr"></li>
+                          <li>
+                            Photoshop{" "}
+                            <span className="graish"> - Pixlr.com</span>
+                          </li>
+                          <li>
+                            Illustrator
+                            <span className="graish"> - Vectr.com</span>
+                          </li>
+                          <li className="hr"></li>
+                          <li> JQuery</li>
+                          <li> Javascript</li> <li> Node</li>
+                          <li>REACT</li>
+                          <li>REACT Context</li>
+                          <li>REACT Framer-Motion</li>
+                          <li>
+                            Ui/ux design libraries
+                            <span className="graish"> - Material design</span>
+                          </li>
+                          <li className="hr"></li>
+                        </ul>{" "}
+                      </div>
+                    ) : null}
+
+                    <div className="inbetween graish">
+                      Having a graphice designer background myself obliges my
+                      students to have a sexy result, it is mainly a Front-End
+                      Course and I am proud when students find a job during or
+                      soon after my course.
+                      <br />
+                      <br />
+                      Being able to speak 5 languages fluently is highly
+                      appreciated.
+                    </div>
+
+                    {show ? (
+                      <div className="programme2 slowy">
+                        <h6>Time-off</h6>
+                        <ul className="programme slowy">
+                          <li className="hr"></li>
+                          <li> Headless CMS Sanity.io.</li>
+                          <li>
+                            {" "}
+                            Tutorials{" "}
+                            <span className="graish"> - Youtube - Udemy</span>
+                          </li>
+                          <li> KAIZEN in coding</li> <li className="hr"></li>
+                        </ul>
+                      </div>
+                    ) : null}
                   </div>
-                  <p className="timeline-subtitle">July 2018 - present day</p>
+                  <p className="timeline-subtitle">July 2018 - present day</p>{" "}
+                  {/* {show ? (
+          <div className="e6cont ">
+            <div className="effect6 ">
+              <FaPlus></FaPlus>
+            </div>
+          </div>
+        ) : (
+          <div className="e6cont ">
+            <div className="effect6 ">
+              <FaMinus></FaMinus>
+            </div>
+          </div>
+        )} */}
+                  <div className="e6cont ">
+                    <div onClick={() => setShow(!show)} className="effect6 ">
+                    {!show ? <FaPlus></FaPlus> : <FaMinus></FaMinus>}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -186,4 +226,4 @@ function timeline() {
   );
 }
 
-export default timeline;
+export default Timeline;

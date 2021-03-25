@@ -26,7 +26,7 @@ p {
   top: 7px;
   width: 4px;
   height: 100%;
-  background: #27293d;
+  background: #778ba5;
 }
 .timeline .timeline-container {
   position: relative;
@@ -227,3 +227,28 @@ p {
 .linker:hover {
   color: white;
 }
+.hr {
+  border-bottom: 2px solid #778ba5;
+  width: 60%;
+  margin-bottom: 0.5vw;
+  padding-bottom: 0.5vw;
+  margin-left: -3vw;
+  opacity: 0.1;
+  list-style-type: none;
+}
+.inbetween {
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+}
+
+.graish {
+  color: #778ba5;
+}
+
+.programme3 {
+  margin-top: -1vw;
+}
+
+/* .slowy {
+  opacity: show ? 1 : 0;
+  transition: "opacity 1s ease-in-out"} */
