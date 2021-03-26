@@ -10,7 +10,7 @@ function Aboutme copy() {
                 <h3>Web Dev Instructor </h3>
                 <h4>A React love affair</h4>
                 <p>
-                    Teaching adults to become a web developer. Being their companion and motivation to obtain this
+                    Teaching adults to become a web developer. Making complex code as simple as possible but not simpler. Being their companion and motivation to obtain this
                     highly appreciated skill.
                 </p>
             </div>
@@ -22,6 +22,9 @@ function Aboutme copy() {
                     As my end of the year project, I made a program for the UZB (Jette) allowing them to show and adapt
                     the price of their treatment importing it from an excel file. <br> <br>
                     The project was awarded with 98% by an independent jury @ Syntra.
+
+                    After the 10 month studies I looked and found a job as a web developer.
+                    It took one year but, I took advantage of myfree time to self-study with Youtube and Udemy.
                 </p>
             </div>
             <div data-date="October 2012 – September 2017">

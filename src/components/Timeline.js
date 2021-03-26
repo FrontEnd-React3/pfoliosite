@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../styles/Timeline.css";
 import me from "../images/class.jpg";
-import { FaPlus } from "react-icons/fa";
-import { FaMinus } from "react-icons/fa";
+import st from "../images/syntra.png";
+import FirstExperience from "./Firstexp";
+import SecondExperience from "./SecondExp";
 
 function Timeline() {
   const [show, setShow] = useState(false);
@@ -11,140 +12,25 @@ function Timeline() {
     <div className="containerbg">
       <div id="experience" className="background-alt">
         <h2 className="heading">Experience</h2>
-        <p> please hover the images</p>
+        <p> please hover the images & use the buttons</p>
         <div className="container">
           <div className="timeline">
             <div className="timeline-container">
               <div className="hovercontainer">
                 <img className="classpicwrap shadow-about" src={me} alt="me" />
               </div>
-              <div className="clastextwrap">
-                <div className="timeline-bodyprim">
-                  <div className="timeline-title">
-                    <span className="badge">Web Dev Instructor</span>
-                  </div>
-                  <h6>A React love affair</h6>
-                  <div>
-                    <div className="inbetween  graish" id="text">
-                      Teaching adults to become a web developer. Being their
-                      companion and motivation to obtain this highly appreciated
-                      skill. The course has been developed by myself and is
-                      React-orientated.
-                    </div>
-                    {!show ? (
-                      <div className="programme3 slowy">
-                        Click "+" to see the full programme.
-                      </div>
-                    ) : null}
-                    {show ? (
-                      <div className="programme  slowy">
-                        {" "}
-                        <h6 className="slowy">Programme</h6>
-                        <ul>
-                          {" "}
-                          <li className="hr"></li>
-                          <li>GIT</li>
-                          <li>Teams</li>
-                          <li>Setting up VS code & extentions</li>{" "}
-                          <li>Teams</li>
-                          <li className="hr"></li>
-                          <li>CSS/SAAS</li>
-                          <li>Grid/FlexBox</li>
-                          <li>Bootstrap</li>
-                          <li className="hr"></li>
-                          <li>PHP/Mysql</li>
-                          <li>Firebase</li>
-                          <li className="hr"></li>
-                          <li>
-                            Photoshop{" "}
-                            <span className="graish"> - Pixlr.com</span>
-                          </li>
-                          <li>
-                            Illustrator
-                            <span className="graish"> - Vectr.com</span>
-                          </li>
-                          <li className="hr"></li>
-                          <li> JQuery</li>
-                          <li> Javascript</li> <li> Node</li>
-                          <li>REACT</li>
-                          <li>REACT Context</li>
-                          <li>REACT Framer-Motion</li>
-                          <li>
-                            Ui/ux design libraries
-                            <span className="graish"> - Material design</span>
-                          </li>
-                          <li className="hr"></li>
-                        </ul>{" "}
-                      </div>
-                    ) : null}
-
-                    <div className="inbetween graish">
-                      Having a graphice designer background myself obliges my
-                      students to have a sexy result, it is mainly a Front-End
-                      Course and I am proud when students find a job during or
-                      soon after my course.
-                      <br />
-                      <br />
-                      Being able to speak 5 languages fluently is highly
-                      appreciated.
-                    </div>
-
-                    {show ? (
-                      <div className="programme2 slowy">
-                        <h6>Time-off</h6>
-                        <ul className="programme slowy">
-                          <li className="hr"></li>
-                          <li> Headless CMS Sanity.io.</li>
-                          <li>
-                            {" "}
-                            Tutorials{" "}
-                            <span className="graish"> - Youtube - Udemy</span>
-                          </li>
-                          <li> KAIZEN in coding</li> <li className="hr"></li>
-                        </ul>
-                      </div>
-                    ) : null}
-                  </div>
-                  <p className="timeline-subtitle">July 2018 - present day</p>{" "}
-                  {/* {show ? (
-          <div className="e6cont ">
-            <div className="effect6 ">
-              <FaPlus></FaPlus>
-            </div>
-          </div>
-        ) : (
-          <div className="e6cont ">
-            <div className="effect6 ">
-              <FaMinus></FaMinus>
-            </div>
-          </div>
-        )} */}
-                  <div className="e6cont ">
-                    <div onClick={() => setShow(!show)} className="effect6 ">
-                    {!show ? <FaPlus></FaPlus> : <FaMinus></FaMinus>}
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <FirstExperience></FirstExperience>
             </div>
 
-            <div className="timeline-container danger">
-              <div className="timeline-icon">
-                <i className="far fa-grin-hearts"></i>
+            <div className="timeline-container">
+              <div className="hovercontainer">
+                <img
+                  className="classpicwrap shadow-about"
+                  src={st}
+                  alt="syntralogo"
+                />
               </div>
-              <div className="timeline-body">
-                <h4 className="timeline-title">
-                  <span className="badge">Danger</span>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam necessitatibus numquam earum ipsa fugiat veniam
-                  suscipit, officiis repudiandae, eum recusandae neque
-                  dignissimos. Cum fugit laboriosam culpa, repellendus esse
-                  commodi deserunt.
-                </p>
-                <p className="timeline-subtitle">2 Hours Ago</p>
-              </div>
+              <SecondExperience></SecondExperience>
             </div>
             <div className="timeline-container success">
               <div className="timeline-icon">

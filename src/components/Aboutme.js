@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/About.css";
+import "../styles/Experiences.css";
 import me from "../images/Benedikt.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -17,7 +18,7 @@ function Aboutme() {
             <h2 className="heading">About Me</h2>
           </div>
           <div className="col-md-8">
-            <p>
+            <p  className="inbetween  graish">
               Result driven creative thinker since 1989 putting the user first,
               understanding the importance of balancing those needs with
               business requirements and development capabilities.

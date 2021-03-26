@@ -23,7 +23,8 @@ function Experience() {
             As my end of the year project, I made a program for the UZB (Jette)
             allowing them to show and adapt the price of their treatment
             importing it from an excel file. <br /> <br />
-            The project was awarded with 98% by an independent jury @ Syntra.
+            The project was awarded with 98% by an independent jury @ Syntra. After the 10 month studies I looked and found a job as a web developer.
+It took one year but, I took advantage of myfree time to self-study with Youtube and Udemy.
           </p>
         </div>
 

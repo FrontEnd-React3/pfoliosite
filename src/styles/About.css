@@ -8,43 +8,28 @@
 .mepiccont {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   height: 120px;
   width: 100%;
-  margin: 0 AUTO;
   margin-bottom: -15px;
   margin-top: -20px;
   padding: 15px;
 }
 
 .mepicwrap {
-  position: relative;
-  height: 80px;
   width: 80px;
-  transition: all 0.5s ease-in-out;
-
-  margin: 0 AUTO;
+  height: 80px;
   border-radius: 50%;
-  /* background: url(../images/Benedikt.jpg); */
-  background-size: cover !important;
-  overflow: hidden !important;
-  border: 1px solid rgba(33, 125, 187, 0.2);
-
-  /* position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  position: gotcha; */
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
 }
 .mepicwrap:hover {
   cursor: pointer;
-  height: 180px;
-  width: 180px;
-  z-index: 999;
+  height: 270px;
+  width: 270px;
+  z-index: 998;
+  transition: all 1s;
 }
 
 #about-overlay {
@@ -68,11 +53,8 @@
   color: #374054;
 }
 #about p {
-  color: #74808a;
-  margin: 0;
-  font-weight: 600;
-  text-align: left;
-  font-size: 12px;
+  text-align: justify;
+  font-weight: 400;
 }
 #education {
   padding: 50px 15px 20px 15px;
