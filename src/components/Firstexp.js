@@ -46,9 +46,9 @@ function FirstExp() {
               <li className="hr"></li>
               <li>GIT</li>
               <li>Teams</li>
-              <li>Setting up VS code & extentions</li> <li>Teams</li>
+              <li>Setting up VS code & extentions</li>
               <li className="hr"></li>
-              <li>CSS/SAAS</li>
+              <li>CSS/SASS</li>
               <li>Grid/FlexBox</li>
               <li>Bootstrap</li>
               <li className="hr"></li>
@@ -66,7 +66,7 @@ function FirstExp() {
               <li> JQuery</li>
               <li> Javascript</li> <li> Node</li>
               <li>REACT</li>
-              <li>REACT Context</li>
+              <li>React & Contextxt</li>
               <li>REACT Framer-Motion</li>
               <li>
                 Ui/ux design libraries

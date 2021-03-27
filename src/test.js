@@ -70,9 +70,8 @@ function timeline() {
                           <li>GIT</li>
                           <li>Teams</li>
                           <li>Setting up VS code & extentions</li>{" "}
-                          <li>Teams</li>
                           <li className="hr"></li>
-                          <li>CSS/SAAS</li>
+                          <li>CSS/SASS</li>
                           <li>Grid/FlexBox</li>
                           <li>Bootstrap</li>
                           <li className="hr"></li>
@@ -91,7 +90,7 @@ function timeline() {
                           <li> JQuery</li>
                           <li> Javascript</li> <li> Node</li>
                           <li>REACT</li>
-                          <li>REACT Context</li>
+                          <li>React & Context</li>
                           <li>REACT Framer-Motion</li>
                           <li>
                             {" "}

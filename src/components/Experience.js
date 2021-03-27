@@ -4,8 +4,8 @@ import 'react-timelines/lib/css/style.css'
 
 function Experience() {
   return (
-    <div id="experience" className="background-alt">
-      <h2 className="heading">Experience</h2>
+    <div className="background-alt">
+      <h2  id="experience" className="heading">Experience</h2>
       <div id="experience-timeline">
         <div data-date="July 2019 – present date">
           <h3>Web Dev Instructor </h3>
