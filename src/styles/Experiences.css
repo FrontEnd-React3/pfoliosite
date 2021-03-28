@@ -46,25 +46,24 @@
   z-index: 997;
   width: 20px;
   height: 20px;
-  border-radius: 100px;
+  border-radius: 50%;
   bottom: 100px;
   background: #3498db;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.effect6:hover {
-  border: 1px solid white;
-  cursor: pointer;
+.effect6:hover {  
+  border: 1.6px solid white;
+  cursor: pointer;  
 }
 .effect5:hover {
-  border: 1px solid white;
   cursor: pointer;
   background: #3498db;
 }
 
 .effect6:active {
-  box-shadow: 0px 100px 0 0 #2ecc71 inset;
+  background: #2ecc71;
 }
 .programme {
   text-align: left;
@@ -95,7 +94,6 @@
   height: 270px;
   width: 270px;
   z-index: 998;
-  transition: all 1s;
 }
 .hovercontainer {
   display: flex;
@@ -150,6 +148,3 @@ li {
 #darkerTLS {
   color: Black;
 }
-/* .slowy {
-  opacity: show ? 1 : 0;
-  transition: "opacity 1s ease-in-out"} */
