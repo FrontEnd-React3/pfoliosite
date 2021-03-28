@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios-react";
 import "../styles/Emailme.css";
-import { Button, TextField } from "@material-ui/core";
+import { ThemeProvider, Button, TextField } from "@material-ui/core";
 
 import { withStyles, createMuiTheme } from "@material-ui/core/styles";
 import { green } from "@material-ui/core/colors";
@@ -81,31 +81,32 @@ function Mailme(props) {
         <form id="form" onSubmit={handleOnSubmit} noValidate autoComplete="off">
           <div className="TextFieldcont">
             <div className="TextFlexer TextFieldwrap">
-              <TextField
-                className="standardform"
-                id="standard-basic"
-                label="Your email-address:"
-                style={{ width: "40vw" }}
-              />{" "}
-              <TextField
-                className="standardform"
-                id="standard-basic"
-                label="Let's meet on..."
-                style={{
-                  width: "25vw",
-
-                }}
-              />
+              <ThemeProvider theme={theme}>
+                <TextField
+                  className="standardform"
+                  id="standard-basic"
+                  label="Your email-address:"
+                  style={{ width: "40vw" }}
+                />{" "}
+                <TextField
+                  className="standardform"
+                  id="standard-basic"
+                  label="Let's meet on..."
+                  style={{
+                    width: "25vw"
+                  }}
+                />
+              </ThemeProvider>
             </div>{" "}
             <div className="TextFlexer TextFieldwrap2">
-              <TextField
+            <ThemeProvider theme={theme}><TextField
                 className="standardform customstandardformMSG"
                 id="outlined-basic"
                 label="Your Message:"
                 variant="outlined"
                 multiline
                 rows={4}
-              />
+              /></ThemeProvider>
             </div>{" "}
             <div className="TextFlexer TextFldinner">
               <Button

@@ -144,18 +144,9 @@ export default function CustomizedInputs() {
           id="mui-theme-provider-outlined-input"
         />
       </ThemeProvider>
-      <FormControl className={classes.margin}>
-        <InputLabel shrink htmlFor="bootstrap-input">
-          Bootstrap
-        </InputLabel>
-        <BootstrapInput defaultValue="react-bootstrap" id="bootstrap-input" />
-      </FormControl>
+    
 
-      <InputBase
-        className={classes.margin}
-        defaultValue="Naked input"
-        inputProps={{ 'aria-label': 'naked' }}
-      />
+
       <ValidationTextField
         className={classes.margin}
         label="CSS validation style"

@@ -7,7 +7,6 @@ import Timeline from "./components/Timeline";
 import Skills from "./components/Skills";
 import { Button } from "@material-ui/core";
 import NavB from "./components/NavB";
-import Test from "./components/test";
 import MailMe from "./components/Emailme";
 // import { InfoData, InfoDataTwo } from './InfoData';
 
@@ -20,7 +19,6 @@ function App() {
       <About />
       <Timeline />
       <Skills />
-      <Test />
       <MailMe />
     </div>
   );
